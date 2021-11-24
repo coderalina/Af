@@ -146,3 +146,21 @@ button{
     margin-left: 42%;
 }
 
+.watermark img {
+    width: 100%;
+}
+
+
+
+.watermark::after{
+    content: "OUT OF STOCK";
+    font-size: 330%;
+    font-weight: bold;
+    color: salmon;
+    opacity: 0.5;
+    position: absolute;
+    text-align: center;
+    transform: rotateZ(40deg);
+    bottom: 110px;
+    margin-left: 2%;
+}
