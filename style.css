@@ -6,13 +6,21 @@ padding: 0;
 box-sizing: border-box;
 font-family: 'Poppins' , sans-serif;
 }
-body{
-    display: flex;
+
+@media only screen and (max-width: 500px) {
+
+  body{
+
     justify-content: center;
     align-content: center;
     min-height: 100vh;
     background: #dcdcdc;
 }
+}
+
+
+
+
 .container{
     position: relative;
     width: 1200px;
@@ -20,6 +28,8 @@ body{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
     padding: 20px;
+    align-items: center;
+    margin-left: 10%;
 
 }
 
@@ -116,8 +126,8 @@ h1{
     text-align: center;
     text-shadow: 2px 2px 5px red;
     font-style: italic;
-    margin-left: 90px;
-    margin-top: 25px;
+    margin-left: 1%;
+    margin-top: 8%;
     
 }
 
@@ -127,7 +137,8 @@ h4{
     font-style: italic;
     font-size: 20px;
     text-align: right;
-    margin-top: 35px;
+    margin-top: 9%;
+
 }
 
 button{
@@ -163,4 +174,11 @@ button{
     transform: rotateZ(40deg);
     bottom: 110px;
     margin-left: 2%;
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 400px;
+    margin-top: 80px;
 }
